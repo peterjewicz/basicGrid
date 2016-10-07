@@ -1,0 +1,50 @@
+//Styles for the Grid Reside here
+
+@import 'settings';
+
+
+.row{max-width: $maxWidth; margin: 0 auto;}
+.row-fluid{width: 100%; max-width: none;}
+
+
+//default all classes to have rows of 100% under the small breakpoints
+[class*='column-']{
+	width:100%; 
+	float:left;
+	padding: $xsmallColumnPadding;
+}
+
+
+.column-xsmall-1{width: 8.33%;}
+.column-xsmall-2{width: 16.67%;}
+.column-xsmall-3{width: 25%;}
+.column-xsmall-4{width: 33.33%;}
+.column-xsmall-5{width: 41.67%;}
+.column-xsmall-6{width: 50%;}
+.column-xsmall-7{width: 58.33%;}
+.column-xsmall-8{width: 66.67%;}
+.column-xsmall-9{width: 75%;}
+.column-xsmall-10{width: 83.33%;}
+.column-xsmall-11{width: 91.67%;}
+.column-xsmall-12{width: 100%;}
+
+
+
+//********SMALL SCREENS*************
+
+@media (min-width: $small){
+	[class*='column-']{
+		width:100%; 
+		padding: $smallColumnPadding;
+	}
+	
+}
+
+//********MEDIUM SCREENS*************
+
+
+
+//********LARGE SCREENS*************
+
+
+//********XLARGE SCREENS*************

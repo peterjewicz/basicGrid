@@ -1,2 +1,33 @@
+.row { max-width: 1024px; margin: 0 auto; }
+
+.row-fluid { width: 100%; max-width: none; }
+
+[class*='column-'] { width: 100%; float: left; padding: 10px; }
+
+.column-xsmall-1 { width: 8.33%; }
+
+.column-xsmall-2 { width: 16.67%; }
+
+.column-xsmall-3 { width: 25%; }
+
+.column-xsmall-4 { width: 33.33%; }
+
+.column-xsmall-5 { width: 41.67%; }
+
+.column-xsmall-6 { width: 50%; }
+
+.column-xsmall-7 { width: 58.33%; }
+
+.column-xsmall-8 { width: 66.67%; }
+
+.column-xsmall-9 { width: 75%; }
+
+.column-xsmall-10 { width: 83.33%; }
+
+.column-xsmall-11 { width: 91.67%; }
+
+.column-xsmall-12 { width: 100%; }
+
+@media (min-width: 768px) { [class*='column-'] { width: 100%; padding: 10px; } }
 
 /*# sourceMappingURL=grid.css.map */
