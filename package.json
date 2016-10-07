@@ -1,0 +1,13 @@
+{
+  "name": "BasicGrid",
+  "version": "1.0.0",
+  "description": "A simple, customizable CSS",
+  "devDependencies": {
+    "grunt": "^*",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-sass": "*",
+    "matchdep": "^0.3.0"
+  }
+}
