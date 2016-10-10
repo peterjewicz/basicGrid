@@ -5,6 +5,9 @@
 //max width use for non-fluid rows
 $maxWidth: 1024px;
 
+//top and bottom margin for the row itself
+$rowMargin: 20px;
+
 
 //Values used to define breakpoints. These are the max for a particular layout
 //Change these to change the point the grid changes layout.
@@ -17,8 +20,8 @@ $large: 1200px;
 //Padding Values for the columns at various breakpoints
 //These are by defaul the same but are changeable
 // on an individual breakpoint basis
-$xsmallColumnPadding: 10px;
-$smallColumnPadding: 10px;
-$mediumColumnPadding: 10px;
-$largeColumnPadding: 10px;
-$xlargeColumnPadding: 10px; 
+// top right bottom left
+$xsmallColumnPadding: 0px 10px 0 10px;
+$smallColumnPadding: 0px 10px 0 10px;
+$mediumColumnPadding: 0px 10px 0 10px;
+$largeColumnPadding: 0px 10px 0 10px;
