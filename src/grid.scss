@@ -108,4 +108,11 @@
 	.column-large-12{width: 100%;}	
 }
 
-.row-eq-height { display: -ms-flexbox; display: flex !important; -ms-flex-align: center; align-items: center; }
+
+//apply this class to a row to verically center the smaller divs height 
+//wise based on the tallest div's height
+.row-eq-height { 
+	display: -ms-flexbox; 
+	display: flex !important; 
+	-ms-flex-align: center; 
+	align-items: center; }
