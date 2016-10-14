@@ -2,22 +2,195 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Simple Responsive Grid</title>
-		<link rel="stylesheet" type="text/css" href="../dist/css/grid.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<div class="row">
-			<div class="column-xsmall-6 column-small-9 column-medium-6 column-large-4">Hello</div>
-				<div class="column-xsmall-6 column-small-3 column-medium-6 column-large-4" >Peter</div>
-		</div>
-		<div class="row-fluid row-eq-height">
-			<div class="column-xsmall-6 column-small-9 column-medium-6 column-large-6">
-				<div class="content"  style="background-color: lightblue;">Hello Peter This is a text block with a lot of text
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
+		<div class="hero">
+			<div>
+				<h1>Basic Grid</h1>
 			</div>
-				<div class="column-xsmall-6 column-small-3 column-medium-6 column-large-6">
-					<div class="content"  style="background-color: lightblue;">Not so much text here</div>
-				</div>
+			<div>
+				<h2>The World's Simplest Responsive CSS Grid</h2>
+			</div>
+			<div>
+				<a class="downloadButton" href="#"> Download Now</a>
+			</div>
+			<div class="scrollWrapper">
+				<div class="scrollText">Scroll</div>
+				<span id="scroll"><img src="scroll.png" width='30px'  alt="scroll for more"/>
+			</div>
+		</div>
+		<div class="row mainContent">
+			<h2>Welcome To Basic Grid</h2>
+			<p>
+				Basic Grid Is the simplest CSS grid ever made, ready to be brought
+				into any project and used straight away. Following the farmiliar 12 grid
+				layout basic grid is easy for any skill level. For those that like the most
+				control; basic grid comes with only the grid styles and nothing else.
+				</br></br>
+				For those that like a bit more basic grid also comes with the full sass files and
+				the ability to customize. For example, changing the padding for the columns is as simple
+				as modifying a single variable and running "grunt build"!
+				</br></br>
+				To start each grid is wrapper in a row. There are two row classes "row" and "row-fluid".
+				</br></br>
+				Row is your standarded center container that by default is fixed to a mx width of 1024px.
+				Row-fluid is a completly fluid container, it will strech to fill its container. You're free
+				to mix and match these on the site as you please.
+			</p>
+		</div>
+		<div class="row mainContent featuresRow">
+			<h2>Sweet Features</h2>
+			<div class="column-small-4">
+				<img src="responsive.png" alt="Responsive CSS Grid" width="50%"/>
+				<h3>Responsive</h3>
+				<p>Mobile First Approach ensures great display on any size screen. With the ability
+					to change the grid at breakpoints it's easy to get the perfect layout everytime.
+				</p>
+			</div>
+			<div class="column-small-4">
+				<img src="customize.png" alt="Customizeable CSS Grid" width="45%"/>
+				<h3>Customizable</h3>
+				<p>Built with sass it's super easy to customize. Not happy with the padding? Maybe want
+					to use a a different breakpoint size? No problem! A simple change to the sass is all
+					that's required.
+				</p>
+			</div>
+			<div class="column-small-4">
+				<img src="feather.png" alt="Lightweight CSS Grid" width="60%"/>
+				<h3>Light Weight</h3>
+				<p>Basic grid is super lighweight and won't increase your load times. At just over 2KB compressed
+					it's very tiny and ready to drop into any project with minimal effect.
+				</p>
+			</div>
+		</div>
+		<div class="row mainContent rowDemo">
+			<h2>Column Demo</h2>
+			<p class="marginBottom">Basic grid uses the farmilar 12 column layout to display content. Each column is denoted
+				by a number 1-12 of how much space it should take; for example attaching the class column-large-6
+				to a div will give a 50% width of from the large and up breakpoint. Anything under the specified
+				breakpoint will default to 100% width.
+				</br></br>
+				Basic Grid supports mixing, so adding "column-small-6 column-medium-9" will give
+				a 75% width for medium and up, 50% for small, and 100% for extra small. You're free
+				to mix any of the breakpoints to a single element in order to get exact layout you're
+				looking for.
+				</br></br>
+				Here you'll see a demon of the classes in action. Each column below is given a width for <thead>
+				small media query, so anything above 768px will display based on the column number, and default to
+				100% width under that.
+				</thead>
+			</p>
+			<div class="column-small-1 col">
+				<div class="content">col-1</div>
+			</div>
+			<div class="column-small-11 col">
+				<div class="content">col-11</div>
+			</div>
+
+			<div class="column-small-2 col">
+				<div class="content">col-2</div>
+			</div>
+			<div class="column-small-10 col">
+				<div class="content">col-10</div>
+			</div>
+
+			<div class="column-small-3 col">
+				<div class="content">col-3</div>
+			</div>
+			<div class="column-small-9 col">
+				<div class="content">col-9</div>
+			</div>
+
+			<div class="column-small-4 col">
+				<div class="content">col-4</div>
+			</div>
+			<div class="column-small-8 col">
+				<div class="content">col-8</div>
+			</div>
+
+			<div class="column-small-5 col">
+				<div class="content">col-5</div>
+			</div>
+			<div class="column-small-7 col">
+				<div class="content">col-7</div>
+			</div>
+
+
+			<div class="column-small-6 col">
+				<div class="content">col-6</div>
+			</div>
+			<div class="column-small-6 col">
+				<div class="content">col-6</div>
+			</div>
+
+
+			<div class="column-small-7 col">
+				<div class="content">col-7</div>
+			</div>
+			<div class="column-small-5 col">
+				<div class="content">col-7</div>
+			</div>
+
+			<div class="column-small-8 col">
+				<div class="content">col-8</div>
+			</div>
+			<div class="column-small-4 col">
+				<div class="content">col-4</div>
+			</div>
+
+			<div class="column-small-9 col">
+				<div class="content">col-9</div>
+			</div>
+			<div class="column-small-3 col">
+				<div class="content">col-3</div>
+			</div>
+
+
+
+			<div class="column-small-10 col">
+				<div class="content">col-10</div>
+			</div>
+			<div class="column-small-2 col">
+				<div class="content">col-2</div>
+			</div>
+
+			<div class="column-small-11 col">
+				<div class="content">col-11</div>
+			</div>
+			<div class="column-small-1 col">
+				<div class="content">col-1</div>
+			</div>
+		</div>
+		<div class="row mainContent">
+			<h2>Breakpoints</h2>
+			<p>Basic Grid comes with 3 default media queries and one for defaults. All the numbers listed below are defaults,
+				but can easily be changed in the included sass files.
+				</br>
+				<span class="breakpointText">Large: col-large-* (Above 1200px)</span>
+				</br>
+				<span class="breakpointText">Medium: col-medium-* (Above 992px)</span>
+				</br>
+				<span class="breakpointText">Small: col-small-* (Above 768px)</span>
+				</br>
+				<span class="breakpointText">Extra Small: col-xsmall-* (under 768px)</span>
+			</p>
+		</div>
+		<div class="row mainContent featuresRow">
+			<h2>Customize Away</h2>
+			<p>
+				For those that like to tinker Basic Grid comes with the souce sass files.
+				One of these is a "settings.scss" files, which controls many of the values listed above.
+				This includes things like the breakpoint values, column padding, and row margin. If you're
+				looking for something a little bit differerent than the defaults this gives you an easy way to
+				do so.
+			</p>
+		</div>
+		<div class="footer marginTop">
+			Built by Peter Jewicz & Total Web Connections
+			View on Github
 		</div>
 	</body>
 </html>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple, customizable CSS",
   "devDependencies": {
-    "grunt": "^*",
+    "grunt": "^1.0.1",
     "grunt-autoprefixer": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-watch": "*",
