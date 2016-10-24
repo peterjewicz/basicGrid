@@ -21,7 +21,9 @@ h3{font-size: 1.25rem;}
 .hero div{text-align: center;}
 .downloadButton{color:white; underline: none; text-decoration: none;
 border: 1px solid; padding: 12px; border-radius: 2px; transition: all .3s;}
-.downloadButton:hover{text-decoration: none; background-color: #3489c7; border-color: #317aaf;}
+.downloadButton2{border-color: #80669d; color:#80669d}
+.downloadButton:hover{text-decoration: none; background-color: #3489c8; border-color: #317aaf;}
+.downloadButton2:hover{color:black}
 .scrollWrapper{position: absolute; bottom: 20px; left:0;
 right:0;
 margin-left:auto;
@@ -36,12 +38,11 @@ margin-right:auto;}
 .mainContent{margin-top: 65px;}
 .featuresRow{border-top: 1px solid #efeeef; padding-top: 65px;}
 .rowDemo{border-top: 1px solid #efeeef; padding-top: 65px;}
-.rowDemo .col{ padding: 0 10px 0 10px; margin: 10px 0 10px 0;}
+.rowDemo .col{ padding: 0 10px 0 10px; margin: 10px 0 10px 0; color:white;}
 .rowDemo .col .content{background-color:#3489c7; padding: 10px 0 10px 5px; text-align: left;
 border-radius: 5px;
 }
 .breakpointText{color: #886da7; font-weight: 600;}
-
 
 .footer{height: 10vh; width: 100%;
     color:white;
@@ -49,6 +50,10 @@ border-radius: 5px;
     background: #886da7; /* Old browsers */
 
 }
+
+.footer .column{padding: 15px 15px 0 15px;}
+.footer a{color:white;}
+.github a{float:right;}
 
 
 @keyframes blink {
