@@ -61,3 +61,8 @@ border-radius: 5px;
     50%  {opacity: 0;}
     100% {opacity: 1;}
 }
+
+
+@media(max-width: 767px){
+    .leftFooter{font-size: 12px;}
+}
