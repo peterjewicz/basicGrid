@@ -21,12 +21,12 @@
 //default all classes to have rows of 100% under the small breakpoints
 //default row styles
 [class*='column-']{
-	width:100%; 
+	width:100%;
 	float:left;
 	padding: $xsmallColumnPadding;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;  
+	box-sizing: border-box;
 }
 
 
@@ -43,6 +43,11 @@
 .column-xsmall-11{width: 91.67%;}
 .column-xsmall-12{width: 100%;}
 
+
+//utilityClasses
+.showForLargeOnly{display:none;}
+.showForMediumOnly{display:none;}
+.showForSmallOnly{display:none;}
 
 
 //********SMALL SCREENS*************
@@ -63,7 +68,7 @@
 	.column-small-9{width: 75%;}
 	.column-small-10{width: 83.33%;}
 	.column-small-11{width: 91.67%;}
-	.column-small-12{width: 100%;}	
+	.column-small-12{width: 100%;}
 }
 
 //********MEDIUM SCREENS*************
@@ -83,7 +88,7 @@
 	.column-medium-9{width: 75%;}
 	.column-medium-10{width: 83.33%;}
 	.column-medium-11{width: 91.67%;}
-	.column-medium-12{width: 100%;}	
+	.column-medium-12{width: 100%;}
 }
 
 
@@ -105,14 +110,14 @@
 	.column-large-9{width: 75%;}
 	.column-large-10{width: 83.33%;}
 	.column-large-11{width: 91.67%;}
-	.column-large-12{width: 100%;}	
+	.column-large-12{width: 100%;}
 }
 
 
-//apply this class to a row to verically center the smaller divs height 
+//apply this class to a row to verically center the smaller divs height
 //wise based on the tallest div's height
-.row-eq-height { 
-	display: -ms-flexbox; 
-	display: flex !important; 
-	-ms-flex-align: center; 
+.row-eq-height {
+	display: -ms-flexbox;
+	display: flex !important;
+	-ms-flex-align: center;
 	align-items: center; }
